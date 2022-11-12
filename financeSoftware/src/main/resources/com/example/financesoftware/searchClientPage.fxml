@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ecd3bd;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.financesoftware.SearchClientController">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="250.0" style="-fx-background-color: #97b3bf;" BorderPane.alignment="CENTER">
+         <children>
+            <TextField layoutX="75.0" layoutY="14.0" promptText="Enter Name" />
+            <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Search">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <TableView layoutX="15.0" layoutY="46.0" prefHeight="310.0" prefWidth="220.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="Last Name" />
+                <TableColumn prefWidth="75.0" text="First Name" />
+              </columns>
+            </TableView>
+            <Button fx:id="backBut" layoutX="15.0" layoutY="365.0" mnemonicParsing="false" onAction="#backMenu" prefHeight="25.0" prefWidth="45.0" text="Back">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="newBut" layoutX="190.0" layoutY="365.0" mnemonicParsing="false" onAction="#newClient" prefHeight="25.0" prefWidth="45.0" text="Renew">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Button fx:id="editBut" layoutX="73.0" layoutY="365.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="45.0" text="Edit">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="delBut" layoutX="131.0" layoutY="365.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="45.0" text="Delete">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <GridPane prefHeight="384.0" prefWidth="314.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="First Name:" textAlignment="CENTER" GridPane.rowIndex="2" />
+            <Label layoutX="10.0" layoutY="29.0" text="Last Name:" textAlignment="CENTER" GridPane.rowIndex="3" />
+            <Label layoutX="10.0" layoutY="64.0" text="Address:" textAlignment="CENTER" GridPane.rowIndex="6" />
+            <Label layoutX="10.0" layoutY="39.0" text="Personal Details:" textAlignment="CENTER" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="89.0" text="Age:" textAlignment="CENTER" GridPane.rowIndex="4" />
+            <Label layoutX="10.0" layoutY="89.0" text="Birth Date:" textAlignment="CENTER" GridPane.rowIndex="5" />
+            <Label layoutX="10.0" layoutY="114.0" text="Phone Number:" textAlignment="CENTER" GridPane.rowIndex="7" />
+            <Label layoutX="10.0" layoutY="164.0" text="Email:" textAlignment="CENTER" GridPane.rowIndex="8" />
+            <Label layoutX="10.0" layoutY="189.0" text="Telephone Number:" textAlignment="CENTER" GridPane.rowIndex="9" />
+            <Label layoutX="10.0" layoutY="14.0" text="Reference Person:" textAlignment="CENTER" GridPane.rowIndex="11">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="201.0" text="First Name:" textAlignment="CENTER" GridPane.rowIndex="12" />
+            <Label layoutX="10.0" layoutY="220.0" text="Last Name:" textAlignment="CENTER" GridPane.rowIndex="13" />
+            <Label layoutX="10.0" layoutY="239.0" text="Address:" textAlignment="CENTER" GridPane.rowIndex="14" />
+            <Label layoutX="10.0" layoutY="258.0" text="Contact Number:" textAlignment="CENTER" GridPane.rowIndex="15" />
+            <Label layoutX="10.0" layoutY="199.0" text="Loan Information:" textAlignment="CENTER" GridPane.rowIndex="17">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="258.0" text="Total Loan Amount:" textAlignment="CENTER" GridPane.rowIndex="18" />
+            <Label layoutX="10.0" layoutY="334.0" text="Terms:" textAlignment="CENTER" GridPane.rowIndex="19" />
+            <Label layoutX="10.0" layoutY="353.0" text="Remaining Balance:" textAlignment="CENTER" GridPane.rowIndex="20" />
+            <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label layoutX="185.0" layoutY="47.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label layoutX="185.0" layoutY="65.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label layoutX="185.0" layoutY="83.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label layoutX="185.0" layoutY="101.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label layoutX="185.0" layoutY="119.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label layoutX="185.0" layoutY="137.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <Label layoutX="185.0" layoutY="155.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <Label layoutX="185.0" layoutY="173.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+            <Label layoutX="185.0" layoutY="227.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+            <Label layoutX="185.0" layoutY="245.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+            <Label layoutX="185.0" layoutY="263.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+            <Label layoutX="185.0" layoutY="281.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="18" />
+            <Label layoutX="185.0" layoutY="335.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="19" />
+            <Label layoutX="185.0" layoutY="354.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="20" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <BorderPane.margin>
+            <Insets left="5.0" />
+         </BorderPane.margin>
+      </GridPane>
+   </center>
+</BorderPane>
